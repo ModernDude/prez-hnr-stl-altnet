@@ -1,7 +1,23 @@
-Landslide
-=========
+# ![HNR](images/hnr-logo.png) HackerNewsRadio.com
 
 ---
+
+# What is it?
+
+A model for publishing audio streams from textual sources on the web. 
+
+**More Specifically...**
+
+- A processor that scrapes
+  [news.ycombinator.com](http://news.ycombinator.com), converts text
+  representation to synthesized speech and publishes audio streams.
+- A website providing an embedded audio player and links to the
+  published streams.
+
+![hnr web](images/hnr-web.png)
+
+
+--- 
 
 Landslide
 ---------
