@@ -25,17 +25,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title><img alt="HNR" src="images/hnr-logo.png" /> HackerNewsRadio.com</title>
+    <title>Hacker News Radio</title>
     <!-- Styles -->
     
-    <link rel="stylesheet" media="print" href="theme/css/print.css">
-    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+    <link rel="stylesheet" media="print" href="themes/prez/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="themes/prez/css/screen.css">
     
     
     <!-- /Styles -->
     <!-- Javascripts -->
     
-    <script type="text/javascript" src="theme/js/slides.js"></script>
+    <script type="text/javascript" src="themes/prez/js/slides.js"></script>
     
     
     <!-- /Javascripts -->
@@ -47,12 +47,47 @@
     </div>
     <div class="slides">
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/title.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide title">
+        
+        
           <div class="inner">
             
-            <header><h1><img alt="HNR" src="images/hnr-logo.png" /> HackerNewsRadio.com</h1></header>
+            <header><h1>Hacker News Radio</h1></header>
+            
+            
+            <section><p><img src="src/images/hnr-logo.png" />
+<p>@jeffsigmon - 6/22/2011</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/title.md">src/title.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/overview.md -->
+      <div class="slide-wrapper">
+        <div class="slide overview">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Overview</h1></header>
             
             
           </div>
@@ -65,19 +100,21 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/overview.md">src/overview.md</a>
             </aside>
             
             <aside class="page_number">
-              1/11
+              2/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/overview.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide overview">
+        
+        
           <div class="inner">
             
             <header><h1>What is it?</h1></header>
@@ -92,7 +129,7 @@
 <li>A website providing an embedded audio player and links to the
   published streams.</li>
 </ul>
-<p><img src="images/hnr-web.png" /></section>
+<p><img src="src/images/hnr-web.png" /></section>
             
           </div>
           <div class="presenter_notes">
@@ -104,41 +141,69 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/overview.md">src/overview.md</a>
             </aside>
             
             <aside class="page_number">
-              2/11
+              3/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/overview.md -->
       <div class="slide-wrapper">
-        <div class="slide has_notes">
+        <div class="slide overview">
+        
+        
           <div class="inner">
             
-            <header><h2>Landslide</h2></header>
+            <header><h1>Demo</h1></header>
             
             
-            <section><p class="notes">plop</p>
-<p>Generates a slideshow using the slides that power
-<a href="http://apirocks.com/html5/html5.html">the html5-slides presentation</a>.</p>
-<p>A <code>python</code> with the <code>jinja2</code>, <code>markdown</code>, and <code>pygments</code> modules is required.</p>
-<h2>Markdown Formatting Instructions</h2>
-<ul>
-<li>Separate your slides with a horizontal rule (--- in markdown)</li>
-<li>Your first slide (title slide) should not have a heading, only <code>&lt;p&gt;</code>s</li>
-<li>Your other slides should have a heading that renders to an h1 element</li>
-<li>To highlight blocks of code, put !{{lang}} as the first indented line</li>
-<li>See the included slides.md for an example</li>
-</ul>
-<h2>Rendering Instructions</h2>
-<ul>
-<li>Put your markdown content in a file called <code>slides.md</code></li>
-<li>Run <code>python render.py</code></li>
-<li>Enjoy your newly generated <code>presentation.html</code></li>
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/overview.md">src/overview.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/overview.md -->
+      <div class="slide-wrapper">
+        <div class="slide overview">
+        
+        
+          <div class="inner">
+            
+            <header><h1>What software/services are used?</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://clojure.org">Clojure</a> is the glue binds it all</li>
+<li><a href="http://mary.dfki.de">MARY TTS</a> is an open-source, multilingual Text-to-Speech Synthesis platform written in Java.</li>
+<li><a href="http://gstreamer.freedesktop.org">gstreamer</a> is an open source multimedia framework.</li>
+<li><a href="http://code.google.com/p/gstreamer-java">gstreamer-java</a> is a Java interface to the gstreamer framework.</li>
+<li><a href="http://www.icecast.org">Icecast</a> is free server software for streaming multimedia.</li>
+<li><a href="https://github.com/cgrand/enlive">Enlive</a> is selector-based templating and transformation system for Clojure.</li>
+<li><a href="http://html5boilerplate.com">HTML5 BOILERPLATE</a> is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.</li>
+<li><a href="https://github.com/jeffsigmon/pynch">pynch</a> is a clojure library for scraping hacker news.</li>
+<li><a href="http://www.diffbot.com">Diffbot Article API</a> will extract and clean article text from news article web pages. </li>
+<li><a href="https://github.com/yayitswei/diffbot-clj">diffbot-clj</a> Clojure client for Diffbot.</li>
+<li><a href="linode.com">linode.com</a> is a linux vps hosting provider.</li>
+<li><a href="http://tunein.com">tunein.com</a> gives you access to over 50,000 of the world's radio stations so you can find and listen to unlimited music, sports and talk radio.</li>
 </ul></section>
             
           </div>
@@ -151,37 +216,27 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/overview.md">src/overview.md</a>
             </aside>
             
             <aside class="page_number">
-              3/11
+              5/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/overview.md -->
       <div class="slide-wrapper">
-        <div class="slide foo bar">
+        <div class="slide overview">
+        
+        
           <div class="inner">
             
-            <header><h1>Slide #2</h1></header>
+            <header><h1>Context</h1></header>
             
             
-            <section><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tellus,
-fermentum nec venenatis nec, dapibus id metus. Phasellus nulla massa, consequat
-nec tempor et, elementum viverra est. Duis sed nisl in eros adipiscing tempor.</p>
-<h2>Section #1</h2>
-<p>Integer in dignissim ipsum. Integer pretium nulla at elit facilisis eu feugiat
-velit consectetur.</p>
-<h2>Section #2</h2>
-<p>Donec risus tortor, dictum sollicitudin ornare eu, egestas at purus. Cras
-consequat lacus vitae lectus faucibus et molestie nisl gravida. Donec tempor,
-tortor in varius vestibulum, mi odio laoreet magna, in hendrerit nibh neque eu
-eros.</p>
-<h2>Unicode Characters Work</h2>
-<p>© é</p></section>
+            <section><p><img src="src/images/context.png" /></section>
             
           </div>
           <div class="presenter_notes">
@@ -193,22 +248,56 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/overview.md">src/overview.md</a>
             </aside>
             
             <aside class="page_number">
-              4/11
+              6/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/overview.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide overview">
+        
+        
           <div class="inner">
             
-            <header><h1>Middle Title Slide</h1></header>
+            <header><h1>Data Flow Level 1</h1></header>
+            
+            
+            <section><p><img src="src/images/data-flow.png" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/overview.md">src/overview.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/parsing.md -->
+      <div class="slide-wrapper">
+        <div class="slide parsing">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Parsing Hacker News</h1></header>
             
             
           </div>
@@ -221,84 +310,39 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              5/11
+              8/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/parsing.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide parsing has_code">
+        
+        
           <div class="inner">
             
-            <header><h1>Slide #3</h1></header>
+            <header><h1>Pynch</h1></header>
             
             
-            <section><p><strong>Hello Gentlemen</strong></p>
-<ul>
-<li>Mega Man 2</li>
-<li>Mega Man 3</li>
-<li>Spelunky</li>
-<li>Dungeon Crawl Stone Soup</li>
-<li>Etrian Odyssey</li>
-</ul>
-<p><em>Are you prepared to see beyond the veil of reason?</em> - DeceasedCrab</p>
-<ul>
-<li>Black Cascade</li>
-<li>Two Hunters</li>
-<li>Diadem of 12 Stars</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              6/11
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code">
-          <div class="inner">
-            
-            <header><h1>Slide #4</h1></header>
-            
-            
-            <section><p>First code block:</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-<span class="lineno">2</span>     <span class="k">print</span> <span class="s">&quot;Everything&#39;s gonna be allright&quot;</span>
-</pre></div>
-
-<p>Second code block:</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="cp">&lt;?php</span> <span class="nb">exec</span><span class="p">(</span><span class="s1">&#39;python render.py --help&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
-</pre></div>
-
-<p>Third code block:</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="lineno">2</span> <span class="nt">&lt;painting&gt;</span>
-<span class="lineno">3</span>   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;madonna.jpg&quot;</span> <span class="na">alt=</span><span class="s">&#39;Foligno Madonna, by Raphael&#39;</span><span class="nt">/&gt;</span>
-<span class="lineno">4</span>   <span class="nt">&lt;caption&gt;</span>This is Raphael&#39;s &quot;Foligno&quot; Madonna, painted in
-<span class="lineno">5</span>     <span class="nt">&lt;date&gt;</span>1511<span class="nt">&lt;/date&gt;</span>–<span class="nt">&lt;date&gt;</span>1512<span class="nt">&lt;/date&gt;</span>.
-<span class="lineno">6</span>   <span class="nt">&lt;/caption&gt;</span>
-<span class="lineno">7</span> <span class="nt">&lt;/painting&gt;</span>
+            <section><p>A clojure library to scrape/parse submission from hacker news. </p>
+<h2>Get the most recent submission</h2>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="p">(</span><span class="nb">-&gt; </span><span class="s">&quot;http://news.ycombinator.com&quot;</span> <span class="nv">java</span><span class="o">.</span><span class="nv">net</span><span class="o">.</span><span class="nv">URI</span><span class="o">.</span> <span class="nv">get-subs</span> <span class="nv">first</span><span class="p">)</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="c1">;;;output</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="p">{</span><span class="nv">:points</span> <span class="mi">120</span><span class="o">,</span>
+<span class="lineno"> 6</span>  <span class="nv">:title</span> <span class="s">&quot;F.B.I. Seizes Web Servers, Knocking Sites Offline &quot;</span><span class="o">,</span>
+<span class="lineno"> 7</span>  <span class="nv">:sub-time</span> <span class="o">#</span><span class="nv">&lt;DateTime</span> <span class="mi">2011-06-22</span><span class="nv">T00:08:00</span><span class="o">.</span><span class="mi">000</span><span class="nv">Z&gt;,</span>
+<span class="lineno"> 8</span>  <span class="nv">:sub-url</span> <span class="s">&quot;http://bits.blogs.nytimes.com/2011/06/21/f-b-i-seizes-web-servers-knocking-sites-offline/&quot;</span><span class="o">,</span>
+<span class="lineno"> 9</span>  <span class="nv">:user</span> <span class="s">&quot;tshtf&quot;</span><span class="o">,</span>
+<span class="lineno">10</span>  <span class="nv">:com-url</span> <span class="s">&quot;item?id=2680922&quot;</span><span class="o">,</span>
+<span class="lineno">11</span>  <span class="nv">:com-count</span> <span class="mi">66</span><span class="p">}</span>
 </pre></div>
 </section>
             
@@ -312,28 +356,49 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              7/11
+              9/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/parsing.md -->
       <div class="slide-wrapper">
-        <div class="slide has_code">
+        <div class="slide parsing has_code">
+        
+        
           <div class="inner">
             
-            <header><h1>Slide #5</h1></header>
+            <header><h1>Get submission details</h1></header>
             
             
-            <section><p>Another code block:</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="k">if</span> <span class="o">(</span><span class="n">markdown</span> <span class="o">&amp;&amp;</span> <span class="n">isEasy</span><span class="o">())</span> <span class="o">{</span>
-<span class="lineno">2</span>     <span class="k">return</span> <span class="kc">true</span><span class="o">;</span> 
-<span class="lineno">3</span> <span class="o">}</span>
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="p">(</span><span class="nb">-&gt; </span><span class="s">&quot;http://news.ycombinator.com/item?id=2681410&quot;</span>
+<span class="lineno"> 2</span>             <span class="nv">java</span><span class="o">.</span><span class="nv">net</span><span class="o">.</span><span class="nv">URI</span><span class="o">.</span> <span class="nv">get-sub-details</span><span class="p">)</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> <span class="c1">;;;output</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="p">({</span><span class="nv">:title</span> <span class="s">&quot;Brendan Eich: New JavaScript Engine Module Owner&quot;</span><span class="o">,</span>
+<span class="lineno"> 7</span>   <span class="nv">:time</span> <span class="o">#</span><span class="nv">&lt;DateTime</span> <span class="mi">2011-06-22</span><span class="nv">T03:17:00</span><span class="o">.</span><span class="mi">000</span><span class="nv">Z&gt;,</span>
+<span class="lineno"> 8</span>   <span class="nv">:points</span> <span class="mi">20</span><span class="o">,</span>
+<span class="lineno"> 9</span>   <span class="nv">:user</span> <span class="s">&quot;pufuwozu&quot;</span><span class="o">,</span>
+<span class="lineno">10</span>   <span class="nv">:notes</span> <span class="s">&quot;\n&quot;</span><span class="o">,</span>
+<span class="lineno">11</span>   <span class="nv">:com-url</span> <span class="s">&quot;item?id=2681410&quot;</span><span class="o">,</span>
+<span class="lineno">12</span>   <span class="nv">:com-count</span> <span class="mi">2</span><span class="o">,</span>
+<span class="lineno">13</span>   <span class="nv">:comments</span>
+<span class="lineno">14</span>   <span class="p">({</span><span class="nv">:user</span> <span class="s">&quot;keyle&quot;</span><span class="o">,</span>
+<span class="lineno">15</span>     <span class="nv">:time</span> <span class="o">#</span><span class="nv">&lt;DateTime</span> <span class="mi">2011-06-22</span><span class="nv">T03:17:00</span><span class="o">.</span><span class="mi">000</span><span class="nv">Z&gt;,</span>
+<span class="lineno">16</span>     <span class="nv">:cmnt-url</span> <span class="s">&quot;item?id=2681497&quot;</span><span class="o">,</span>
+<span class="lineno">17</span>     <span class="nv">:cmnt-text</span>
+<span class="lineno">18</span>     <span class="p">(</span><span class="s">&quot;Is that likely to have a significant impact on the way we write Javascript today?&quot;</span><span class="p">)}</span>
+<span class="lineno">19</span>    <span class="p">{</span><span class="nv">:user</span> <span class="s">&quot;wmf&quot;</span><span class="o">,</span>
+<span class="lineno">20</span>     <span class="nv">:time</span> <span class="o">#</span><span class="nv">&lt;DateTime</span> <span class="mi">2011-06-22</span><span class="nv">T03:24:00</span><span class="o">.</span><span class="mi">000</span><span class="nv">Z&gt;,</span>
+<span class="lineno">21</span>     <span class="nv">:cmnt-url</span> <span class="s">&quot;item?id=2681560&quot;</span><span class="o">,</span>
+<span class="lineno">22</span>     <span class="nv">:cmnt-text</span>
+<span class="lineno">23</span>     <span class="p">(</span><span class="s">&quot;No. JavaScript is (now) important enough that no one person has that much influence over it.&quot;</span><span class="p">)})})</span>
 </pre></div>
 </section>
             
@@ -347,26 +412,47 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              8/11
+              10/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/parsing.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide parsing has_code">
+        
+        
           <div class="inner">
             
-            <header><h1>Slide #6</h1></header>
+            <header><h1>Enlive</h1></header>
             
             
-            <section><p>An image:</p>
-<p><img src="monkey.jpg" /></section>
+            <section><p>Enlive is an extraction and transformation library for HTML and XML documents written in Clojure. It uses CSS-like selectors.</p>
+<p>Usual Enlive applications include templating and screenscraping.</p>
+<p><strong> Here is a very simple example to retreive list of submission titles
+on hacker news </strong></p>
+<div class="highlight"><pre><span class="lineno"> 1</span>  <span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nv">enlv/text</span> <span class="nv">%</span><span class="p">)</span>    
+<span class="lineno"> 2</span>    <span class="p">(</span><span class="nf">enlv/select</span>  
+<span class="lineno"> 3</span>       <span class="p">(</span><span class="nb">-&gt; </span><span class="s">&quot;http://news.ycombinator.com&quot;</span> <span class="nv">java</span><span class="o">.</span><span class="nv">net</span><span class="o">.</span><span class="nv">URI</span><span class="o">.</span> <span class="nv">enlv/html-resource</span><span class="p">)</span> 
+<span class="lineno"> 4</span>    <span class="p">[</span><span class="nv">:td</span><span class="o">.</span><span class="nv">title</span> <span class="nv">:a</span><span class="p">]))</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span>    <span class="p">(</span><span class="s">&quot;Revolutionary \&quot;Light Field\&quot; camera tech - shoot-first, focus-later&quot;</span> 
+<span class="lineno"> 7</span>     <span class="s">&quot;F.B.I. Seizes Web Servers, Knocking Sites Offline &quot;</span> 
+<span class="lineno"> 8</span>     <span class="s">&quot;Please, make yourself uncomfortable&quot;</span> 
+<span class="lineno"> 9</span>     <span class="s">&quot;Pinboard.in service limited - FBI raided hosting company and pulled equpiment&quot;</span> 
+<span class="lineno">10</span>     <span class="s">&quot;Brendan Eich: New JavaScript Engine Module Owner&quot;</span> 
+<span class="lineno">11</span>     <span class="s">&quot;Comparing Indian states with countries&quot;</span> 
+<span class="lineno">12</span>     <span class="s">&quot;Impressions of Android from a dev&#39;s perspective&quot;</span> 
+<span class="lineno">13</span>     <span class="s">&quot;Firefox 5 is now officially released&quot;</span> 
+<span class="lineno">14</span>     <span class="s">&quot;5 Months of Customer Service Hell with HTC&quot;</span> 
+<span class="lineno">15</span>     <span class="s">&quot;Sony officially 50% of all GitHub&#39;s DMCA notices &quot;</span><span class="p">)</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -378,26 +464,48 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              9/11
+              11/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/parsing.md -->
       <div class="slide-wrapper">
-        <div class="slide has_qr">
+        <div class="slide parsing has_code">
+        
+        
           <div class="inner">
             
-            <header><h1>Slide #7</h1></header>
+            <header><h1>Select list of titles and submitters</h1></header>
             
             
-            <section><p>Landslide can generate QR codes:</p>
-<p class="qr"><img src="http://chart.apis.google.com/chart?chs=450x450&cht=qr&chl=http://github.com/adamzap/landslide&chf=bg,s,00000000&choe=UTF-8" alt="QR Code" /></p></section>
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="p">(</span><span class="nf">enlv/let-select</span> 
+<span class="lineno"> 2</span>   <span class="p">(</span><span class="nb">-&gt; </span><span class="s">&quot;http://news.ycombinator.com&quot;</span> <span class="nv">java</span><span class="o">.</span><span class="nv">net</span><span class="o">.</span><span class="nv">URI</span><span class="o">.</span> <span class="nv">enlv/html-resource</span><span class="p">)</span>
+<span class="lineno"> 3</span>   <span class="p">[</span><span class="nv">titles</span> <span class="p">[</span><span class="nv">:td</span><span class="o">.</span><span class="nv">title</span> <span class="nv">:a</span><span class="p">]</span>
+<span class="lineno"> 4</span>    <span class="nv">users</span> <span class="p">[[</span><span class="nv">:a</span> <span class="p">(</span><span class="nf">enlv/attr-starts</span> <span class="nv">:href</span> <span class="s">&quot;user&quot;</span><span class="p">)]]]</span>
+<span class="lineno"> 5</span>      <span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nv">hash-map</span> <span class="nv">:title</span> <span class="p">(</span><span class="nf">enlv/text</span> <span class="nv">%1</span><span class="p">)</span> <span class="p">(</span><span class="nf">enlv/text</span> <span class="nv">%2</span><span class="p">)</span> <span class="nv">titles</span> <span class="nv">users</span><span class="p">)))</span>
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="c1">;;; OUTPUT</span>
+<span class="lineno"> 8</span> 
+<span class="lineno"> 9</span> <span class="p">(({</span><span class="nv">:title</span> <span class="s">&quot;Revolutionary \&quot;Light Field\&quot; camera tech - shoot-first, focus-later&quot;</span><span class="o">,</span>
+<span class="lineno">10</span>    <span class="nv">:user</span> <span class="s">&quot;hugorodgerbrown&quot;</span><span class="p">}</span>
+<span class="lineno">11</span>   <span class="p">{</span><span class="nv">:title</span> <span class="s">&quot;F.B.I. Seizes Web Servers, Knocking Sites Offline &quot;</span><span class="o">,</span>
+<span class="lineno">12</span>    <span class="nv">:user</span> <span class="s">&quot;tshtf&quot;</span><span class="p">}</span>
+<span class="lineno">13</span>   <span class="p">{</span><span class="nv">:title</span> <span class="s">&quot;Please, make yourself uncomfortable&quot;</span><span class="o">,</span> 
+<span class="lineno">14</span>    <span class="nv">:user</span> <span class="s">&quot;buf&quot;</span><span class="p">}</span>
+<span class="lineno">15</span>   <span class="p">{</span><span class="nv">:title</span> <span class="s">&quot;Pinboard.in service limited - FBI raided hosting company and pulled equpiment&quot;</span><span class="o">,</span>
+<span class="lineno">16</span>    <span class="nv">:user</span> <span class="s">&quot;rograndom&quot;</span><span class="p">}</span>
+<span class="lineno">17</span>   <span class="p">{</span><span class="nv">:title</span> <span class="s">&quot;Brendan Eich: New JavaScript Engine Module Owner&quot;</span><span class="o">,</span>
+<span class="lineno">18</span>    <span class="nv">:user</span> <span class="s">&quot;pufuwozu&quot;</span><span class="p">}</span>
+<span class="lineno">19</span>   <span class="p">{</span><span class="nv">:title</span> <span class="s">&quot;Comparing Indian states with countries&quot;</span><span class="o">,</span> 
+<span class="lineno">20</span>    <span class="nv">:user</span> <span class="s">&quot;gopi&quot;</span><span class="p">}))</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -409,23 +517,44 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              10/11
+              12/39
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides.md -->
+      <!-- slide source: src/parsing.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide parsing has_code">
+        
+        
           <div class="inner">
             
+            <header><h1>Diffbot</h1></header>
             
-            <section><p>This is a slide with no heading. It works too.</p></section>
+            
+            <section><p>Diffbot Article API </p>
+<p>The Article API takes in as input any news story page. Statistical machine learning algorithms are run over all of the visual elements on the page to extract out the article text and associated metadata, such as its images, videos, and tags. If the article spans multiple pages, Diffbot will follow the next pages to get the whole article. There is also experimental support for extracting reader comments.</p>
+<p><strong> Using diffbot-clj </strong></p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="p">(</span><span class="nf">analyze</span>
+<span class="lineno"> 2</span>   <span class="s">&quot;http://brendaneich.com/2011/06/new-javascript-engine-module-owner/&quot;</span>
+<span class="lineno"> 3</span>   <span class="nv">*token*</span><span class="p">)</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="c1">;;; OUTPUT</span>
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="p">{</span><span class="nv">:icon</span> <span class="s">&quot;http://brendaneich.com/favicon.ico&quot;</span><span class="o">,</span>
+<span class="lineno"> 8</span>  <span class="nv">:author</span> <span class="s">&quot;Bill Joy&quot;</span><span class="o">,</span>
+<span class="lineno"> 9</span>  <span class="nv">:text</span> <span class="s">&quot;As you may know, I wrote JavaScript in ten days.... (SHORTENDED BY JEFF FOR THIS PRESENTATION)&quot;</span>
+<span class="lineno">10</span>  <span class="nv">:title</span> <span class="s">&quot;New JavaScript Engine Module Owner&quot;</span><span class="o">,</span>
+<span class="lineno">11</span>  <span class="nv">:date</span> <span class="s">&quot;21 June 2011&quot;</span><span class="o">,</span>
+<span class="lineno">12</span>  <span class="nv">:url</span> <span class="s">&quot;http://brendaneich.com/2011/06/new-javascript-engine-module-owner/&quot;</span><span class="o">,</span>
+<span class="lineno">13</span>  <span class="nv">:xpath</span> <span class="s">&quot;/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[3]&quot;</span><span class="p">}</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -437,11 +566,964 @@ eros.</p>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides.md">slides.md</a>
+              Source: <a href="src/parsing.md">src/parsing.md</a>
             </aside>
             
             <aside class="page_number">
-              11/11
+              13/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Speech Synthesis</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Mary TTS</h1></header>
+            
+            
+            <section><p>MARY is an open-source, multilingual Text-to-Speech Synthesis platform written in Java. It was originally developed as a collaborative project of DFKI's Language Technology lab and the Institute of Phonetics at Saarland University and is now being maintained by DFKI.</p>
+<p>As of version 4.3, MARY TTS supports German, British and American English, Telugu, Turkish, and Russian; more languages are in preparation. MARY TTS comes with toolkits for quickly adding support for new languages and for building unit selection and HMM-based synthesis voices.</p>
+<h2>Key Components</h2>
+<ul>
+<li>Multi-threaded server</li>
+<li>Java Client</li>
+<li>Built in voices</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Input</h1></header>
+            
+            
+            <section><h2>Plain Text</h2>
+<h2>Sable</h2>
+<p>SABLE is an XML markup language used to annotate texts for speech synthesis. It defines tags which control the way words, numbers, and sentences are reproduced by a computer. SABLE was developed as an informal joint project between Sun Microsystems, AT&amp;T, Bell Labs and Edinburgh University (the initial letters of each make the word "SABLE") as an initiative to combine the three previous speech synthesis markup languages SSML, STML, and JSML.</p>
+<h2>Speech Synthesis Markup Language (SSML)</h2>
+<p>Speech Synthesis Markup Language (SSML) is an XML-based markup language for speech synthesis applications. It is a recommendation of the W3C's voice browser working group. SSML is often embedded in VoiceXML scripts to drive interactive telephony systems. However, it also may be used alone, such as for creating audio books. For desktop applications, other markup languages are popular, including Apple's embedded speech commands, and Microsoft's SAPI Text to speech (TTS) markup, also an XML language.</p>
+<h2>Mary XML</h2>
+<p>MaryXML is an internal, relatively low-level markup which reflects the modelling capabilities of this particular TtS system. <br />
+</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts has_code">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Example SSML</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="lineno"> 2</span> <span class="nt">&lt;speak</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2001/10/synthesis&quot;</span>
+<span class="lineno"> 3</span>    <span class="na">xmlns:dc=</span><span class="s">&quot;http://purl.org/dc/elements/1.1/&quot;</span>
+<span class="lineno"> 4</span>    <span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 5</span>    <span class="nt">&lt;metadata&gt;</span>
+<span class="lineno"> 6</span>      <span class="nt">&lt;dc:title</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Telephone Menu: Level 1<span class="nt">&lt;/dc:title&gt;</span>
+<span class="lineno"> 7</span>    <span class="nt">&lt;/metadata&gt;</span>
+<span class="lineno"> 8</span>    <span class="nt">&lt;p&gt;</span>
+<span class="lineno"> 9</span>      <span class="nt">&lt;s</span> <span class="na">xml:lang=</span><span class="s">&quot;en-US&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">10</span>        <span class="nt">&lt;voice</span> <span class="na">name=</span><span class="s">&quot;David&quot;</span> <span class="na">gender=</span><span class="s">&quot;male&quot;</span> <span class="na">age=</span><span class="s">&quot;25&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">11</span>         For English, press <span class="nt">&lt;emphasis&gt;</span>one<span class="nt">&lt;/emphasis&gt;</span>.
+<span class="lineno">12</span>        <span class="nt">&lt;/voice&gt;</span>
+<span class="lineno">13</span>      <span class="nt">&lt;/s&gt;</span>
+<span class="lineno">14</span>      <span class="nt">&lt;s</span> <span class="na">xml:lang=</span><span class="s">&quot;es-MX&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">15</span>        <span class="nt">&lt;voice</span> <span class="na">name=</span><span class="s">&quot;Miguel&quot;</span> <span class="na">gender=</span><span class="s">&quot;male&quot;</span> <span class="na">age=</span><span class="s">&quot;25&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">16</span>         Para español, oprima el <span class="nt">&lt;emphasis&gt;</span>dos<span class="nt">&lt;/emphasis&gt;</span>.
+<span class="lineno">17</span>        <span class="nt">&lt;/voice&gt;</span>
+<span class="lineno">18</span>      <span class="nt">&lt;/s&gt;</span>
+<span class="lineno">19</span>    <span class="nt">&lt;/p&gt;</span>
+<span class="lineno">20</span>  <span class="nt">&lt;/speak&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts has_code">
+        
+        
+          <div class="inner">
+            
+            <header><h1>API Usage</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="p">(</span><span class="nf">ns</span> <span class="nv">bloodymary</span><span class="o">.</span><span class="nv">mary</span>
+<span class="lineno"> 2</span>   <span class="p">(</span><span class="nf">:import</span>
+<span class="lineno"> 3</span>     <span class="p">(</span><span class="nf">marytts</span><span class="o">.</span><span class="nv">client</span><span class="o">.</span><span class="nv">http</span> <span class="nv">Address</span><span class="p">)</span>
+<span class="lineno"> 4</span>     <span class="p">(</span><span class="nf">java</span><span class="o">.</span><span class="nv">io</span> <span class="nv">ByteArrayInputStream</span> <span class="nv">ByteArrayOutputStream</span><span class="p">)))</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="p">(</span><span class="k">def </span><span class="nv">*host*</span> <span class="s">&quot;localhost&quot;</span><span class="p">)</span>
+<span class="lineno"> 7</span> <span class="p">(</span><span class="k">def </span><span class="nv">*port*</span> <span class="mi">59125</span><span class="p">)</span>
+<span class="lineno"> 8</span> <span class="p">(</span><span class="k">def </span><span class="nv">*input-type*</span> <span class="s">&quot;TEXT&quot;</span><span class="p">)</span>
+<span class="lineno"> 9</span> <span class="p">(</span><span class="k">def </span><span class="nv">*audio-type*</span> <span class="s">&quot;AU&quot;</span><span class="p">)</span>
+<span class="lineno">10</span> <span class="p">(</span><span class="k">def </span><span class="nv">*locale*</span> <span class="s">&quot;en_GB&quot;</span><span class="p">)</span>
+<span class="lineno">11</span> <span class="p">(</span><span class="k">def </span><span class="nv">*voice-name*</span> <span class="s">&quot;dfki-spike-hsmm&quot;</span><span class="p">)</span>
+<span class="lineno">12</span> <span class="p">(</span><span class="k">def </span><span class="nv">*style*</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+<span class="lineno">13</span> <span class="p">(</span><span class="k">def </span><span class="nv">*effects*</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
+<span class="lineno">14</span> 
+<span class="lineno">15</span> <span class="p">(</span><span class="k">defn </span><span class="nv">get-audio</span> <span class="p">[</span><span class="nv">s</span> <span class="nv">&amp;</span> <span class="nv">options</span><span class="p">]</span>
+<span class="lineno">16</span>   <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">stream</span> <span class="p">(</span><span class="nf">ByteArrayOutputStream</span><span class="o">.</span><span class="p">)</span>
+<span class="lineno">17</span>         <span class="nv">opts</span> <span class="p">(</span><span class="nb">apply </span><span class="nv">hash-map</span> <span class="nv">options</span><span class="p">)</span>
+<span class="lineno">18</span>         <span class="nv">client</span> <span class="p">(</span><span class="nf">get-client</span> <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:host</span> <span class="nv">*host*</span><span class="p">)</span> <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:port</span> <span class="nv">*port*</span><span class="p">))]</span>
+<span class="lineno">19</span>     <span class="p">(</span><span class="o">.</span><span class="nv">process</span>
+<span class="lineno">20</span>       <span class="nv">client</span> <span class="nv">s</span>
+<span class="lineno">21</span>       <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:input-type</span> <span class="nv">*input-type*</span><span class="p">)</span>
+<span class="lineno">22</span>       <span class="s">&quot;AUDIO&quot;</span>
+<span class="lineno">23</span>       <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:locale</span> <span class="nv">*locale*</span><span class="p">)</span>
+<span class="lineno">24</span>       <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:audio-type</span> <span class="nv">*audio-type*</span><span class="p">)</span>
+<span class="lineno">25</span>       <span class="p">(</span><span class="nb">get </span><span class="nv">opts</span> <span class="nv">:voice-name</span> <span class="nv">*voice-name*</span><span class="p">)</span>
+<span class="lineno">26</span>       <span class="nv">stream</span><span class="p">)</span>
+<span class="lineno">27</span>     <span class="p">(</span><span class="o">.</span><span class="nv">toByteArray</span> <span class="nv">stream</span><span class="p">)))</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/tts.md -->
+      <div class="slide-wrapper">
+        <div class="slide tts">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Demo</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/tts.md">src/tts.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>gstreamer</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>What is it?</h1></header>
+            
+            
+            <section><p>gstreamer is a framework for creating streaming media applications. </p>
+<p>The fundamental design comes from the video pipeline at Oregon Graduate Institute, as well as some ideas from DirectShow.</p>
+<p><strong> Specifically </strong></p>
+<ul>
+<li>API for multimedia applications</li>
+<li>Plugin architecture</li>
+<li>Pipeline architecture</li>
+<li>Mechanism for media type handling/negotiation</li>
+<li>Over 150 plug-ins</li>
+<li>A set of tools</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Context</h1></header>
+            
+            
+            <section><p><img src="src/images/gstreamer-overview.png" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Core Concepts</h1></header>
+            
+            
+            <section><ul>
+<li>Element</li>
+<li>Pad</li>
+<li>Bin</li>
+<li>Pipeline</li>
+<li>Bus</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Data Flow</h1></header>
+            
+            
+            <section><p><img src="src/images/gstreamer-dataflow.png" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Packages</h1></header>
+            
+            
+            <section><ul>
+<li><strong>gstreamer</strong> contains the core library and elements</li>
+<li><strong>gst-plugins-base</strong> contains an essential exemplary set of elements</li>
+<li><strong>gst-plugins-good</strong> contains a set of good-quality plug-ins under our preferred license, LGPL</li>
+<li><strong>gst-plugins-ugly</strong> contains a set of good-quality plug-ins that might pose distribution problems</li>
+<li><strong>gst-plugins-gl</strong> contains plug-in and helper libraries for OpenGL integration</li>
+<li><strong>gst-ffmpeg</strong> contains FFmpeg based plugin</li>
+<li><strong>tools</strong> contains gst-launch, gst-inspect, gst-typefind, gst-feedback</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Key Elements for HNR</h1></header>
+            
+            
+            <section><ul>
+<li>appsrc</li>
+<li>auparse</li>
+<li>audioconvert</li>
+<li>tee</li>
+<li>lamemp3enc</li>
+<li>queue</li>
+<li>audioresample</li>
+<li>capsfilter</li>
+<li>shout2send</li>
+<li>vorbisend</li>
+<li>audiorate</li>
+<li>oggmux</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>HNR Pipeline</h1></header>
+            
+            
+            <section><p><img src="src/images/pipeline.png" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/gstreamer.md -->
+      <div class="slide-wrapper">
+        <div class="slide gstreamer">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Demo</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/gstreamer.md">src/gstreamer.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              28/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Icecast</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              29/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>About</h1></header>
+            
+            
+            <section><p>Icecast is a streaming media server which currently supports Ogg Vorbis and MP3 audio streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for commuincation and interaction.</p>
+<p>There are two major parts to most streaming media servers: the component providing the content (what we call source clients) and the component which is responsible for serving that content to listeners (this is the function of icecast).</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              30/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Concepts</h1></header>
+            
+            
+            <section><p>A <strong>source client</strong> is an external program which is responsible for
+sending content data to icecast. Some source clients that support
+icecast2 are Oddcast, ices2, ices0.3, and DarkIce.</p>
+<p>The <strong>slave server</strong> in a relay configuration is the server that is pulling the data from the master server. It acts as a listening client to the master server.</p>
+<p>The <strong>master server</strong> in a relay configuration is the server that has
+the stream that is being relayed.</p>
+<p>A <strong>mountpoint</strong> is a resource on the icecast server that represents a single broadcast stream. Mountpoints are named similar to files (/mystream.ogg, /mymp3stream). When listeners connect to icecast2, they must specify the mountpoint in the request (i.e. http://192.168.1.10:8000/mystream.ogg). Additionally, source clients must specify a mountpoint when they connect as well. Statistics are kept track of by mountpoint. Mountpoints are a fundamental aspect of icecast2 and how it is organized.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              31/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Mountpoints</h1></header>
+            
+            
+            <section><p>Each icecast server can house multiple broadcasts (or mountpoints)
+each containing a separate stream of content. A 'mountpoint' is a
+unique name on your server identifying a particular stream - it looks
+like a filename, such as '/stream.ogg'. A listener can only listen to
+a single mountpoint at a time. This means you can have a single
+icecast server contain either multiple broadcasts with different
+content, or possibly the same broadcast but with streams of different
+bitrates or qualities. In this case each broadcast or stream is a
+separate mountpoint.</p>
+<ul>
+<li>Static</li>
+<li>Dynamic</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              32/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Configuration</h1></header>
+            
+            
+            <section><ul>
+<li>Concurrent Clients</li>
+<li>Sources</li>
+<li>Timeouts</li>
+<li>Authentication</li>
+<li>Relay</li>
+<li>etc</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              33/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Admin interface</h1></header>
+            
+            
+            <section><p>Through this interface the user can manipulate many server features. From it you can gather statistics, move listeners from mountpoint to mountpoint, disconnect connected sources, disconnect connected listeners, and many other activities.</p>
+<h1>Relying</h1>
+<p>Relaying is the process by which one server mirrors one or more streams from a remote server. The servers need not be of the same type (i.e. icecast can relay from Shoutcast). Relaying is used primarily for large broadcasts that need to distribute listening clients across multiple physical machines.</p>
+<p><strong>Type of Relays</strong></p>
+<p>There are two types of relays that icecast supports. The first type is when both master and slave servers are icecast2 servers. In this case, a "master-slave" relay can be setup such that all that needs to be done is configure the slave server with the connection information (serverip:port) of the master server and the slave will mirror all mountpoints on the master server. The slave will also periodically check the master server to see if any new mountpoints have attached and if so will relay those as well. The second type of relay is a "single-broadcast" relay. In this case, the slave server is configured with a serverip+port+mount and only the mountpoint specified is relayed. In order to relay a broadcast stream on a Shoutcast server, you must use the "single-broadcast" relay and specify a mountpoint of "/".</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              34/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Yellow Pages</h1></header>
+            
+            
+            <section><p>A YP (Yellow Pages) directory is a listing of broadcast streams. Icecast2 has it own YP directory located at http://dir.xiph.org. Currently icecast2 can only be listed in an icecast2-supported YP directory. This means that you cannot list your stream in the Shoutcast YP directory.</p>
+<p>In the icecast2 configuration file are all the currently available YP
+directory servers. Listing your stream in a YP is a combination of
+settings in the icecast configuration file and also in your source
+client.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              35/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Listener Authentication</h1></header>
+            
+            
+            <section><p>Listener authentication is a feature of icecast which allows you to secure a certain mountpoint such that in order to listen, a listener must pass some verification test. With this feature, a simple pay-for-play operation (eg user/pass), or some filtering based on the listener connection can be performed. This section will show you the basics of setting up and maintaining this component.</p>
+<p>To define listener authentication, a group of tags are specified in
+the <mount> group relating to the mountpoint. This means that
+authentication can apply to listeners of source clients or relays.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              36/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Demo</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              37/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Wrap-up</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              38/39
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: src/icecast.md -->
+      <div class="slide-wrapper">
+        <div class="slide icecast">
+        
+        
+          <div class="inner">
+            
+            <header><h1>Questions</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="src/icecast.md">src/icecast.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              39/39
             </aside>
           </footer>
         </div>
@@ -456,63 +1538,236 @@ eros.</p>
       <caption>Table of Contents</caption>
       
       <tr id="toc-row-1">
-        <th><a href="#slide1"><img alt="HNR" src="images/hnr-logo.png" /> HackerNewsRadio.com</a></th>
+        <th><a href="#slide1">Hacker News Radio</a></th>
         <td><a href="#slide1">1</a></td>
       </tr>
       
       
       <tr id="toc-row-2">
-        <th><a href="#slide2">What is it?</a></th>
+        <th><a href="#slide2">Overview</a></th>
         <td><a href="#slide2">2</a></td>
       </tr>
       
-        
-        <tr id="toc-row-3" class="sub">
-          <th><a href="#slide3">Landslide</a></th>
-          <td><a href="#slide3">3</a></td>
-        </tr>
-        
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">What is it?</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
       
       
       <tr id="toc-row-4">
-        <th><a href="#slide4">Slide #2</a></th>
+        <th><a href="#slide4">Demo</a></th>
         <td><a href="#slide4">4</a></td>
       </tr>
       
       
       <tr id="toc-row-5">
-        <th><a href="#slide5">Middle Title Slide</a></th>
+        <th><a href="#slide5">What software/services are used?</a></th>
         <td><a href="#slide5">5</a></td>
       </tr>
       
       
       <tr id="toc-row-6">
-        <th><a href="#slide6">Slide #3</a></th>
+        <th><a href="#slide6">Context</a></th>
         <td><a href="#slide6">6</a></td>
       </tr>
       
       
       <tr id="toc-row-7">
-        <th><a href="#slide7">Slide #4</a></th>
+        <th><a href="#slide7">Data Flow Level 1</a></th>
         <td><a href="#slide7">7</a></td>
       </tr>
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">Slide #5</a></th>
+        <th><a href="#slide8">Parsing Hacker News</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
       
       <tr id="toc-row-9">
-        <th><a href="#slide9">Slide #6</a></th>
+        <th><a href="#slide9">Pynch</a></th>
         <td><a href="#slide9">9</a></td>
       </tr>
       
       
       <tr id="toc-row-10">
-        <th><a href="#slide10">Slide #7</a></th>
+        <th><a href="#slide10">Get submission details</a></th>
         <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Enlive</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Select list of titles and submitters</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Diffbot</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Speech Synthesis</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Mary TTS</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Input</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Example SSML</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">API Usage</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">Demo</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">gstreamer</a></th>
+        <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">What is it?</a></th>
+        <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide22">Context</a></th>
+        <td><a href="#slide22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide23">Core Concepts</a></th>
+        <td><a href="#slide23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide24">Data Flow</a></th>
+        <td><a href="#slide24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide25">Packages</a></th>
+        <td><a href="#slide25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide26">Key Elements for HNR</a></th>
+        <td><a href="#slide26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-27">
+        <th><a href="#slide27">HNR Pipeline</a></th>
+        <td><a href="#slide27">27</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-28">
+        <th><a href="#slide28">Demo</a></th>
+        <td><a href="#slide28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide29">Icecast</a></th>
+        <td><a href="#slide29">29</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-30">
+        <th><a href="#slide30">About</a></th>
+        <td><a href="#slide30">30</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-31">
+        <th><a href="#slide31">Concepts</a></th>
+        <td><a href="#slide31">31</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-32">
+        <th><a href="#slide32">Mountpoints</a></th>
+        <td><a href="#slide32">32</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-33">
+        <th><a href="#slide33">Configuration</a></th>
+        <td><a href="#slide33">33</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-34">
+        <th><a href="#slide34">Admin interface</a></th>
+        <td><a href="#slide34">34</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-35">
+        <th><a href="#slide35">Yellow Pages</a></th>
+        <td><a href="#slide35">35</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-36">
+        <th><a href="#slide36">Listener Authentication</a></th>
+        <td><a href="#slide36">36</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-37">
+        <th><a href="#slide37">Demo</a></th>
+        <td><a href="#slide37">37</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-38">
+        <th><a href="#slide38">Wrap-up</a></th>
+        <td><a href="#slide38">38</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-39">
+        <th><a href="#slide39">Questions</a></th>
+        <td><a href="#slide39">39</a></td>
       </tr>
       
       

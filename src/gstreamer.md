@@ -51,17 +51,32 @@ The fundamental design comes from the video pipeline at Oregon Graduate Institut
 * **gst-ffmpeg** contains FFmpeg based plugin
 * **tools** contains gst-launch, gst-inspect, gst-typefind, gst-feedback
 
-# Core Elements
+--- 
 
-* fakesrc
-* fakesink
-* fdsink
-* fdsrc
-* filesrc
-* filesink
-* identity
-* queue
+# Key Elements for HNR
+
+* appsrc
+* auparse
+* audioconvert
 * tee
-* typefind
-* valve
+* lamemp3enc
+* queue
+* audioresample
+* capsfilter
+* shout2send
+* vorbisend
+* audiorate
+* oggmux
+
+---
+
+# HNR Pipeline
+
+![Pipeline](images/pipeline.png)
+
+--- 
+
+# Demo
+
+
 
