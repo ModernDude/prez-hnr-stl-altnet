@@ -14,7 +14,7 @@ A model for publishing audio streams from textual sources on the web.
 - A website providing an embedded audio player and links to the
   published streams.
 
-![hnr web](images/hnr-web.png)
+![hnr web](images/hnr-web.jpg)
 
 ---
 

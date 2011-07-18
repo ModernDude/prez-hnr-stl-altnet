@@ -21,7 +21,7 @@ The fundamental design comes from the video pipeline at Oregon Graduate Institut
 
 # Context
 
-![gstreamer overview](images/gstreamer-overview.png)
+![gstreamer overview](images/gstreamer-overview.gif)
 
 ---
 
@@ -37,7 +37,7 @@ The fundamental design comes from the video pipeline at Oregon Graduate Institut
 
 # Data Flow
 
-![data flow](images/gstreamer-dataflow.png)
+![data flow](images/gstreamer-dataflow.gif)
 
 ---
 

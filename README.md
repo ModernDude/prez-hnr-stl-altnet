@@ -2,10 +2,11 @@
 
 A model for publishing audio streams from textual sources on the web.
 
-Given at the 6/22/2011 [St. Louis ALT.NET Meetup](http://meetup.com/stlaltdotnet)
+Presented at the 6/22/2011 [St. Louis ALT.NET Meetup](http://meetup.com/stlaltdotnet). A recording is available [here](http://vimeo.com/25538789) 
 
-PDF Version can be viewed [here](https://github.com/jeffsigmon/prez-hnr-stl-altnet/presentation.html)
+PDF version can be viewed [here](http://dl.dropbox.com/u/8446793/presentations/hnr/presentation.pdf)
 
+HTML version can be viewed [here](http://dl.dropbox.com/u/8446793/presentations/hnr/presentation.html)
 
 ## Topics include:
 
